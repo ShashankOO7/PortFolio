@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
@@ -8,6 +9,9 @@ import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
 
 function App() {
+  useEffect(() => {
+    document.title = 'Shashank-PortFolio';
+  }, []);
   return (
     <div className="App">
       <Router basename="/PortFolio/">
