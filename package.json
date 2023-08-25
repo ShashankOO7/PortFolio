@@ -1,7 +1,8 @@
 {
   "name": "my-app",
+  "homepage" : "https://ShashankOO7.github.io/PortFolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy" : "npm run build", 
+    "deploy": "gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +51,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.2",
+    "gh-pages": "^6.0.0",
     "react-router-dom": "^6.14.2"
   }
 }
