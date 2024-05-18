@@ -9,12 +9,9 @@ import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
 
 function App() {
-  useEffect(() => {
-    document.title = 'Shashank-PortFolio';
-  }, []);
   return (
     <div className="App">
-      <Router basename="/PortFolio/">
+      <Router >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
